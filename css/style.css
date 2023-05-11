@@ -31,7 +31,7 @@ html{
 
 .transparent-box-index{
   width: 60%;
-  top: 25vh;
+  top: 13vh;
   left: 18vw;
   font-size:1.2em;
   text-align:center;
@@ -68,7 +68,7 @@ html{
 /*---Carousel ---*/
 .item > img{
   width:100%; 
-  max-height: 81vh;
+  /*max-height: 81vh;*/
 }
 
 /*--- MENU ---*/
@@ -178,11 +178,15 @@ article p{
   border-radius: 5px;
 }
 
+button, input, select, textarea{
+color:#333333;
+}
+
 .btn-yellow{
   background-color:#FFC107;
   color: #333;
   border: 1px solid #efefef;
-  padding:20px;
+  padding:10px;
   font-size:1em;
   font-weight: bolder;
   cursor:pointer;
@@ -254,13 +258,9 @@ article p{
   text-decoration: none;
 }
 
-/*.card:hover{
-  transform: scale(1.03);
-  border: 3px solid #3F51B5;
-}*/
 
 .card button:hover, .card a:hover, .card-interna button:hover, .card2 button:hover, .card2 a:hover, .card2-interna button:hover{
-  background-color: orange;
+  background-color: #FFC107;
   color: black;
   text-decoration: none;
 }
@@ -407,46 +407,53 @@ tbody tr:first-child{
 }
 
 #list-anime{
-  width:85%;
+  width: 85%;
   color:white;
-  border:1px solid #999999;
-  min-height:250px;
+  border:2px solid #efefef!important;
+  min-height: 110vh!important;
   margin:auto;
   padding:20px;
   line-height: normal;
   margin-bottom:20px;
-  border-radius: 10px;
+  min-height: 82vh;
+  background-color: #303F9F;
+  border-radius:10px;
 }
 
-/*
-#list-anime tr{
- border: 1px solid rgb(202, 202, 202);
-}*/
 
-#list-anime th{
-  text-align:left;
-  width:15%;
-  font-size:1.1em;
-  background-color:white;
-  color:#333333;
-  height:40px;
-  border: 1 px solid grey;
+#list-anime .card-result {
+width: 31%;
+background-color: #ffffff;
+color: #333;
+border: 1px solid #efefef;
+border-radius: 10px;;
+float: left;
+margin: 10px;
+padding: 20px;
+height: auto;
+flex-direction: column;
 }
 
-#list-anime td{
-  text-align:left;
-  font-size:1.1em;
+#list-anime .card-result img{
+width: 100%;
+padding: 10px;
 }
 
-#list-anime caption{
-  font-size: 1.8em;
-  color: rgb(93, 93, 93);
-  font-weight:bold;
-}
-#list-anime{
-  color:#333333;
+#list-anime .card-result h3{
+  color: #232323;
+  text-align: left;
+  margin: 0;
 }
 
+
+
+#list-anime .card-result p{
+  color:#232323;
+  margin:10px;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0;
+}
 
 .mapa-content{
   width:100%;
@@ -488,7 +495,7 @@ footer a{
 }
 
 .social_networks:hover{
-  color: orange;
+  color: #FFC107;
 }
 
 
@@ -511,13 +518,14 @@ footer a{
     width: 75vw;
     left: 10vw;
     margin-top: 0!important;
+    display:none;
   }
   .item > img{
     min-height: 40vh;
   }
   .search_items input {
     display: block;
-    margin-left: 29vw;
+    margin-left: 15vw;
     padding: 10px;
   }
   .search_items button {
@@ -569,7 +577,7 @@ footer a{
     top: 3vh;
   }
   .item > img{
-    max-height: 37vh;
+    max-height: 63vh;
   }
   .search_items input {
     display: block;
@@ -610,6 +618,11 @@ footer a{
   }
 }
 @media (max-width: 980px){
-.card {
+.card, .list-anime{
     width: 80%;
 }}
+
+@media (max-width: 980px){
+  .card-result {
+      width: 80%!important;
+  }}
