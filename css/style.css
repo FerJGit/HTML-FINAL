@@ -523,7 +523,7 @@ footer a{
     display:none;
   }
   .item > img{
-    min-height: 40vh;
+    min-height: auto;
   }
   .search_items input {
     display: block;
