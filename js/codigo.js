@@ -42,7 +42,7 @@ function validarEmail() {
   }
 
 
-// ----- Interacción con la API de JIKAN V4 -----
+// ----- Interacción con la API de JIKAN V4 AWANTIIIIAAAAAA -----
 const uri = 'https://api.jikan.moe/v4/anime?q=';
 
 var btnSearch = document.getElementById("btnSearch");
