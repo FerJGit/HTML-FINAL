@@ -203,18 +203,18 @@ color:#333333;
 
 .related{
   width:100%;
-  min-height: 98vh;
+  min-height: 120vh;
   background-color:#FFC107;
   color:#333;
   padding:10px;
 }
 
 .related-acerca{
-  height: 105vh;
+  height: 150vh;
 }
 
 .related-novedades{
-  height: 165vh;
+  height: 190vh;
 }
 
 .related-contacto{
