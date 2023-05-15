@@ -628,6 +628,9 @@ footer a{
   .related-contacto{
     min-height:90vh;
   }
+  .list-anime{
+    min-height: 212vh;
+  }
 }
 
 @media (min-width: 980px){
