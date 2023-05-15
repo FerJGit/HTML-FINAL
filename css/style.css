@@ -430,7 +430,7 @@ tbody tr:first-child{
   padding:20px;
   line-height: normal;
   margin-bottom:20px;
-  min-height: 82vh;
+  min-height: 100vh;
   border-radius:10px;
   /*visibility: hidden;*/
 }
@@ -443,7 +443,7 @@ tbody tr:first-child{
 }
 
 .card-result {
-width: 32%;
+width: 30%;
 background-color: #ffffff;
 color: #333;
 border: 1px solid #efefef;
