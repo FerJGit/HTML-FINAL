@@ -350,8 +350,19 @@ color:#333333;
   border-radius:10px;
 }
 
-#DirOficce {
-  color: white;  
+.mapa-content{
+  width:100%;
+  text-align:center;
+  background-color:#232323;
+  min-height:300px;
+  font-size: 1.2em;
+  justify-content: center;
+  padding:30px;
+  margin:auto;
+}
+
+.mapa-content p, a{
+  color:white;
 }
 
 #DirOficce:hover{
@@ -362,6 +373,7 @@ color:#333333;
   width: 50%;
   min-height: 30vh;
 }
+
 /* ------ Fin Contacto ------------------
 
 
@@ -408,23 +420,30 @@ tbody tr:first-child{
   color: black;
 }
 
+/* Resultados de la busqueda de animes con la API JIKAN */
 #list-anime{
   width: 85%;
+  background-color: #303F9F;
   color:white;
-  border:2px solid #efefef!important;
-  min-height: 110vh!important;
+  border:2px solid #efefef;
   margin:auto;
   padding:20px;
   line-height: normal;
   margin-bottom:20px;
   min-height: 82vh;
-  background-color: #303F9F;
   border-radius:10px;
+  /*visibility: hidden;*/
 }
 
+#list-anime h1{
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 30vh;
+}
 
-#list-anime .card-result {
-width: 31%;
+.card-result {
+width: 32%;
 background-color: #ffffff;
 color: #333;
 border: 1px solid #efefef;
@@ -436,20 +455,18 @@ height: auto;
 flex-direction: column;
 }
 
-#list-anime .card-result img{
-width: 100%;
+.card-result img{
+width: 75%;
 padding: 10px;
 }
 
-#list-anime .card-result h3{
+.card-result h3{
   color: #232323;
   text-align: left;
   margin: 0;
 }
 
-
-
-#list-anime .card-result p{
+.card-result p{
   color:#232323;
   margin:10px;
   font-weight: bold;
@@ -457,21 +474,17 @@ padding: 10px;
   padding: 0;
 }
 
-.mapa-content{
-  width:100%;
-  text-align:center;
-  background-color:#232323;
-  min-height:300px;
-  color: white;
-  font-size: 1.2em;
-  justify-content: center;
-  padding:30px;
-  margin:auto;
+.card-result a{
+  color: orange;
+  text-decoration: none;
+  font-style:italic;
+  font-weight: bolder;
+  font-size: 16px;
 }
 
-.mapa-content p{
-  color:white;
-}
+/* ---------------------------- */
+
+
 
 footer {
   background-color: #333;
