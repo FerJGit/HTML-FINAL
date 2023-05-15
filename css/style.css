@@ -530,14 +530,14 @@ footer a{
     line-height: 30px;
   }
   .transparent-box-index{
-    width: 75vw;
-    left: 10vw;
-    margin-top: 0!important;
     display:none;
   }
-  .item > img{
-    min-height: auto;
+
+  .transparent-box {
+    padding: 0;
+    margin-top: 50px;
   }
+
   .search_items input {
     display: block;
     margin-left: 15vw;
@@ -561,13 +561,16 @@ footer a{
     min-height:200vh!important;
   }
   .card2{
-    width: 42%;
+    width: 90%;
   }
   .related-novedades{
     min-height:362vh!important;
   }
   .related-contacto{
     min-height: 90vh!important;
+  }
+  .list-anime{
+    min-height:138vh!important;
   }
 }
 
