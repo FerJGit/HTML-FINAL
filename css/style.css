@@ -59,17 +59,35 @@ html{
   color:#FFC107;
 }
 
+/*---Carousel ---*/
+.item > img{
+  width:100%; 
+}
+
 .wrap-img{
   width:100%;
   margin:0;
   padding-top:50px;
+  min-height:350px;
 }
 
-/*---Carousel ---*/
-.item > img{
-  width:100%; 
-  /*max-height: 81vh;*/
+/* Imagenes para los encabezados de las páginas */
+.wrap1{
+  background-image: url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
 }
+
+.wrap2{
+  background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c912a1ce1d58e50f37495f640cb61839c7183adb78470593267cabaedf4fd3c8._RI_V_TTW_.jpg);
+}
+
+.wrap3{
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
+}
+
+.wrap4{
+  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkJ0U8X_w0RpzY4koR4kTx8rzReTsSXnacFNyj8JTusjxAHa6oPB4EopjOR6Z23Hg_dtMdsj3KhkuVOx3YoUr2c6UPKqLeNeV8vVwL8XNLreuhwpCiTVQgbVzmbSAsmxI5oLM8DQnxbEJl0xemAD161M0vJB8ldcuZQZqZoi1tzXwZgcPKxyH6t2BobQ/s700/jigokuraku-anime-personajes.jpg);
+}
+
 
 /*--- MENU ---*/
 nav {
@@ -145,7 +163,6 @@ p {
   padding:20px;
 }
 
-
 article{
   width: 85%;
   margin: 20px auto;
@@ -201,24 +218,76 @@ color:#333333;
   cursor:pointer;
 }
 
+/* --- Resultados de la busqueda de animes con la API JIKAN ---*/
+#list-anime{
+  width: 85%;
+  background-color: #303F9F;
+  color:white;
+  border:2px solid #efefef;
+  margin:auto;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:10px;
+  height:82vh;
+}
+
+/* Mensaje de no hay películas */
+#list-anime h1{
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.card-result {
+  width: 32%;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #efefef;
+  border-radius: 10px;;
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  height: auto;
+  flex-direction: column;
+  box-shadow: 5px 5px rgb(87, 84, 97);
+}
+
+.card-result img{
+  width: 75%;
+  padding: 10px;
+}
+
+.card-result h3{
+  color: #232323;
+  text-align: left;
+  margin: 0;
+}
+
+.card-result p{
+  color:#232323;
+  margin:10px;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0;
+}
+
+.card-result a{
+  color: orange;
+  text-decoration: none;
+  font-style:italic;
+  font-weight: bolder;
+  font-size: 16px;
+}
+/* ---------------------------- */
+
+/* ------ Cards --------*/
 .related{
   width:100%;
-  min-height: 120vh;
   background-color:#FFC107;
   color:#333;
   padding:10px;
-}
-
-.related-acerca{
-  height: 150vh;
-}
-
-.related-novedades{
-  height: 190vh;
-}
-
-.related-contacto{
-  min-height: 65vh;
+  /*height:92vh;*/
 }
 
 .related h1{
@@ -242,7 +311,6 @@ color:#333333;
 
 .card, .card2 {
   width: 26%;
-  /*height: 75vh;*/
   background-color: #fff;
   color:#333;
   border:1px solid #efefef;
@@ -251,6 +319,7 @@ color:#333333;
   margin: 2% auto 2% 5%;
   padding:20px;
   height:auto;
+  box-shadow: 5px 5px rgb(87, 84, 97);
 }
 
 .card a, .card2 a{
@@ -296,9 +365,23 @@ color:#333333;
 }
 
 .card-interna h3, .card-interna p{
-    text-align: left;
-    color: #333;
+  text-align: left;
+  color: #333;
 }
+
+.card2 img{
+  float:right;
+  /*border: #303F9F solid 1px;*/
+  border-radius: 40px;
+}
+
+.card2:hover{
+  transform:
+    perspective(1500px)
+    rotateX(5deg)
+}
+
+/* --------------------------- */ 
 
 /* ---- Contacto datos --- */
 .InputData{
@@ -373,30 +456,7 @@ color:#333333;
   width: 50%;
   min-height: 30vh;
 }
-
 /* ------ Fin Contacto ------------------
-
-
-/* Imagenes para los encabezados de las páginas */
-.wrap1{
-  background-image: url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
-  min-height:350px;
-}
-
-.wrap2{
-  background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c912a1ce1d58e50f37495f640cb61839c7183adb78470593267cabaedf4fd3c8._RI_V_TTW_.jpg);
-  min-height:350px;
-}
-
-.wrap3{
-  background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
-  min-height:350px;
-}
-
-.wrap4{
-  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkJ0U8X_w0RpzY4koR4kTx8rzReTsSXnacFNyj8JTusjxAHa6oPB4EopjOR6Z23Hg_dtMdsj3KhkuVOx3YoUr2c6UPKqLeNeV8vVwL8XNLreuhwpCiTVQgbVzmbSAsmxI5oLM8DQnxbEJl0xemAD161M0vJB8ldcuZQZqZoi1tzXwZgcPKxyH6t2BobQ/s700/jigokuraku-anime-personajes.jpg);
-  min-height:350px;
-}
 
 
 /* Tabla en pantalla de datos enviados Show_data */
@@ -408,82 +468,17 @@ color:#333333;
 }
 /* Para hacerla tipo zebra */
 tbody tr:nth-child(odd) {
-  background: rgb(199, 199, 199);
-  color: white;
+  background: rgb(241, 240, 240);
+  color: black;
 }
 tbody tr:nth-child(even) {
-  background:#efefef;
+  background:#c7c5c5;
 }
 /* Para el título */
 tbody tr:first-child{
-  /*background: orange;*/
+  background: rgb(172, 170, 170);
   color: black;
 }
-
-/* Resultados de la busqueda de animes con la API JIKAN */
-#list-anime{
-  width: 85%;
-  background-color: #303F9F;
-  color:white;
-  border:2px solid #efefef;
-  margin:auto;
-  padding:20px;
-  line-height: normal;
-  margin-bottom:20px;
-  min-height: 82vh;
-  border-radius:10px;
-  /*visibility: hidden;*/
-}
-
-#list-anime h1{
-  font-weight: bold;
-  font-size: 5em;
-  text-align: center;
-  margin-top: 30vh;
-}
-
-.card-result {
-width: 32%;
-background-color: #ffffff;
-color: #333;
-border: 1px solid #efefef;
-border-radius: 10px;;
-float: left;
-margin: 10px;
-padding: 20px;
-height: auto;
-flex-direction: column;
-}
-
-.card-result img{
-width: 75%;
-padding: 10px;
-}
-
-.card-result h3{
-  color: #232323;
-  text-align: left;
-  margin: 0;
-}
-
-.card-result p{
-  color:#232323;
-  margin:10px;
-  font-weight: bold;
-  font-size: 1em;
-  padding: 0;
-}
-
-.card-result a{
-  color: orange;
-  text-decoration: none;
-  font-style:italic;
-  font-weight: bolder;
-  font-size: 16px;
-}
-
-/* ---------------------------- */
-
 
 
 footer {
@@ -515,8 +510,14 @@ footer a{
 
 
 /* Media Queries */
+@media screen and (max-width: 645px){
+  .transparent-box-index{
+    display: none;
+  }
+}
 
-@media screen and (max-width: 768px) and (orientation: portrait){
+
+@media screen and (max-width: 768px){
   nav {
     height: auto;
   }
@@ -533,7 +534,6 @@ footer a{
     width: 75vw;
     left: 10vw;
     margin-top: 0!important;
-    display:none;
   }
   .item > img{
     min-height: auto;
@@ -541,38 +541,47 @@ footer a{
   .search_items input {
     display: block;
     margin-left: 15vw;
+    margin-bottom: 5vh;
     padding: 10px;
   }
-  .search_items button {
-    margin-top: 3vh;
-    margin-left: 5vw;
+  #list-anime{
+    width: 80%;
+    min-height: 205vh!important;
+  }
+  .card-result {
+    margin-left: 8vw;
+    margin-top: 5vh!important;
+    width: 80%;
   }
   .related{
-    min-height: 220vh!important;
-  }
+    min-height:220vh;
+  }  
   .card {
-    max-width: 90%;
-    margin-bottom: 10%;
+    max-width: 80%;
+    margin-left: 10vw;
+    margin-bottom: 9%;
+    margin-top: 9%;
   }
   .card img{
     margin:10px;
   }
   .related-acerca{
-    min-height:200vh!important;
+    height:190vh;
   }
   .card2{
     width: 42%;
+    margin-top: 8vh!important;
   }
   .related-novedades{
-    min-height:362vh!important;
+    min-height:168vh;
   }
   .related-contacto{
-    min-height: 90vh!important;
+    min-height: 55vh;
   }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 980px) /*and (orientation: portrait)*/{
+@media screen and (max-width: 1024px){
   nav {
     height: auto;
   }
@@ -592,52 +601,85 @@ footer a{
     top: 3vh;
   }
   .item > img{
-    max-height: 63vh;
+    height: 40vh!important;
   }
   .search_items input {
     display: block;
     margin-left: 28vw;
     width: 32%;
     padding: 10px;
+    margin-bottom: 3vh;
   }
   .search_items button {
     margin-top: 3vh;
     margin-left: 6vw;
   }
-  .related{
-    min-height:245vh;
+  #list-anime{
+    min-height: 245vh;
+    width: 80%;
   }
-  
+  .card-result {
+    margin-left: 8vw;
+    margin-top: 3vh;
+    flex-direction: row;
+    width: 80%;
+  }
+  .related{
+    min-height:240vh!important;
+  }
+  .card{
+    margin-left: 10vw;
+    width: 80%;
+    flex-direction: row;
+    margin-top: 6%;    
+  }
   .card img{
     margin:10px;
     padding-left: 5vw;
   }  
   .related-acerca{
-    min-height:200vh;
+    min-height:170vh!important;
   }
   .card2{
     width: 70%;
-    margin: 10vh 15vw 7vh;
+    margin: 5vh 15vw 2vh;
   }
   .related-novedades{
-    min-height:385vh;
+    min-height:390vh!important;
   }
   .related-contacto{
-    min-height:90vh;
+    min-height:50vh!important;
   }
 }
 
-@media (min-width: 980px){
+@media (min-width: 1025px){
   .related {
     flex-direction: column;
+    min-height:90vh;
+  }
+  .item > img{
+    height: 75vh!important;
+  }
+  .transparent-box-index{
+    top: 18vh;
+  }
+  #list-anime{
+    /*min-height: 82vh;*/
+    flex-direction: row;
+  }
+  .card-result {
+    margin-left: 1vw;
+    margin-top: 2vh;
+    width: 30.5%;
+  }
+   .related-acerca{
+    height:105vh;
+  }
+  .related-novedades{
+    height:168vh;
+  }
+  .related-contacto{
+    min-height:50vh;
   }
 }
-@media (max-width: 980px){
-.card, .list-anime{
-    width: 80%;
-}}
 
-@media (max-width: 980px){
-  .card-result {
-      width: 80%!important;
-  }}
