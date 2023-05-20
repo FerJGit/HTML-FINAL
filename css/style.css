@@ -535,9 +535,12 @@ footer a{
     left: 10vw;
     margin-top: 0!important;
   }
-  .item > img{
-    min-height: auto;
+
+  .transparent-box {
+    padding: 0;
+    margin-top: 50px;
   }
+
   .search_items input {
     display: block;
     margin-left: 15vw;
@@ -577,6 +580,9 @@ footer a{
   }
   .related-contacto{
     min-height: 55vh;
+  }
+  .list-anime{
+    min-height:138vh!important;
   }
 }
 
@@ -649,6 +655,9 @@ footer a{
   }
   .related-contacto{
     min-height:50vh!important;
+  }
+  .list-anime{
+    min-height: 212vh;
   }
 }
 

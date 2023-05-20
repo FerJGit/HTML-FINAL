@@ -9,7 +9,7 @@ elem.innerHTML = `
         <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="Novedades.html">Novedades</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
