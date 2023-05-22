@@ -10,6 +10,65 @@ html{
   background-color: white;
 }
 
+/*---- Menu hamburguesa -------*/
+.btn-hamb{
+  visibility:hidden;
+  position: absolute;
+  top: 7px;
+  left: 700px;
+  background-color: #303F9F;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end; 
+  width: 40px; 
+  height: 40px;
+  box-sizing: border-box; 
+}
+
+.menu-toggle {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Hago cambio de barritas a X para cerrar */
+.menu-icon.active .line-1 {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-icon.active .line-2 {
+  opacity: 0;
+}
+
+.menu-icon.active .line-3 {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Muestro el menu entrando por la derecha */
+nav.active {
+  display: block;
+  left: 600px;
+  z-index: 9999;
+}
+/*-----------------------------*/
+
+
 .content-carousel{
   position: relative;
   top: 0;
@@ -17,11 +76,23 @@ html{
   width: 100%;
 }
 
+.transparent-box-index{
+  background-color: #333333;
+  opacity:0.8;
+  color:white;
+  padding:30px;  
+  width: 60%;
+  position:absolute;
+  top: 13vh;
+  left: 18vw;
+  font-size:1.2em;
+  text-align:center;
+}
+
 .transparent-box{
   background-color: #333333;
   opacity:0.8;
   color:white;
-  margin:auto;
   padding:30px;
   width:60%;
   position:absolute;
@@ -29,15 +100,7 @@ html{
   left: 18vw;
 }
 
-.transparent-box-index{
-  width: 60%;
-  top: 13vh;
-  left: 18vw;
-  font-size:1.2em;
-  text-align:center;
-}
-
-.transparent-box span{
+.transparent-box-index span, .transparent-box span{
   font-weight:bold; 
   color:#FFC107;
 }
@@ -371,7 +434,6 @@ color:#333333;
 
 .card2 img{
   float:right;
-  /*border: #303F9F solid 1px;*/
   border-radius: 40px;
 }
 
@@ -510,7 +572,7 @@ footer a{
 
 
 /* Media Queries */
-@media screen and (max-width: 645px){
+@media screen and (max-width: 700px){
   .transparent-box-index{
     display: none;
   }
@@ -518,27 +580,34 @@ footer a{
 
 
 @media screen and (max-width: 768px){
+  .btn-hamb{
+    visibility:visible;
+  }
   nav {
-    height: auto;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    width: 100%;
-  }
-  nav ul li a {
-    line-height: 30px;
-  }
-  .transparent-box-index{
-    width: 75vw;
-    left: 10vw;
-    margin-top: 0!important;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 50px; 
+    left: 1200px;
+    background-color: #303F9F;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 9999;
   }
 
-  .transparent-box {
-    padding: 0;
-    margin-top: 50px;
+  .transparent-box-index{
+    padding: 5px;
+    width: 70vw!important;
+    position:fixed;
+    left: 13vw!important;
+  }
+ 
+  .transparent-box{
+    padding: 5px;
+    width: 60vw;
+    position:static!important;
+    margin-left: 20vw!important;
+    margin-top: 5vh!important;
   }
 
   .search_items input {
@@ -600,12 +669,21 @@ footer a{
   nav ul li a {
     line-height: 30px;
   }
+ 
+  .transparent-box {
+    padding: 0;
+    position:absolute;
+    top: 23vh!important;
+    left: 20vw;    
+  }
+
   .transparent-box-index{
     width: 70vw;
+    position:absolute;
+    top: 7vh!important;
     left: 13vw;
-    margin-top: 2vh;
-    top: 3vh;
   }
+
   .item > img{
     height: 40vh!important;
   }
@@ -669,11 +747,22 @@ footer a{
   .item > img{
     height: 75vh!important;
   }
+   .transparent-box {
+    width:30vw!important;
+    padding: 0;
+    position:absolute;
+    top: 19vh;
+    left: 35vw;    
+  }
   .transparent-box-index{
-    top: 18vh;
+    width:50vw;
+    height: 32vh;
+    padding: 10px;
+    position:absolute;
+    top: 23vh;
+    left: 22vw;
   }
   #list-anime{
-    /*min-height: 82vh;*/
     flex-direction: row;
   }
   .card-result {
