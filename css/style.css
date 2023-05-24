@@ -434,6 +434,7 @@ color:#333333;
 
 .card2 img{
   float:right;
+  height: 10vh;
   border-radius: 40px;
 }
 
