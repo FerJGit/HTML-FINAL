@@ -14,8 +14,8 @@ html{
 .btn-hamb{
   visibility:hidden;
   position: absolute;
-  top: 7px;
-  left: 700px;
+  top: 5px;
+  left: 92vw;
   background-color: #303F9F;
   padding: 5px;
   display: flex;
@@ -63,7 +63,7 @@ html{
 /* Muestro el menu entrando por la derecha */
 nav.active {
   display: block;
-  left: 600px;
+  left: 77vw;
   z-index: 9999;
 }
 /*-----------------------------*/
@@ -576,6 +576,11 @@ footer a{
   .transparent-box-index{
     display: none;
   }
+  nav.active {
+    display: block;
+    left: 65vw!important;
+    z-index: 9999;
+  }
 }
 
 
@@ -592,6 +597,11 @@ footer a{
     background-color: #0b1662;
     padding: 20px;
     transition: all 0.3s ease;
+    z-index: 9999;
+  }
+  nav.active {
+    display: block;
+    left: 77vw;
     z-index: 9999;
   }
 
