@@ -589,7 +589,7 @@ footer a{
     height: 100%;
     top: 50px; 
     left: 1200px;
-    background-color: #303F9F;
+    background-color: #0b1662;
     padding: 20px;
     transition: all 0.3s ease;
     z-index: 9999;
@@ -751,15 +751,15 @@ footer a{
     width:30vw!important;
     padding: 0;
     position:absolute;
-    top: 19vh;
+    top: 23vh;
     left: 35vw;    
   }
   .transparent-box-index{
-    width:50vw;
-    height: 32vh;
+    width: 50vw;
+    height: 44vh;
     padding: 10px;
-    position:absolute;
-    top: 23vh;
+    position: absolute;
+    top: 17vh;
     left: 22vw;
   }
   #list-anime{
