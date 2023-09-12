@@ -17,7 +17,7 @@ elem.innerHTML = `
     <nav>
         <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="https://ceurrutia.github.io/TIF-frontend/" target="_blank">Tienda</a></li>
         <li><a href="novedades.html">Novedades</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -46,7 +46,7 @@ var elem = document.getElementById("idfooter");
 elem.innerHTML = `
   <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-l social_networks">   Twitter</i></a> 
   <i class="fa-brands fa-linkedin-in fa-l social_networks">   Linkedin</i> 
-  <p>Copyright &copy;2023 - Comisión 23004: Luciano, Fernado, Cecilia, Franco</p>
+  <p>Copyright &copy;2023 - Comisión 23004: Cecilia Urrutia, Fernando Jaleh</p>
 `
 
 

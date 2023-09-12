@@ -165,7 +165,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 nav ul li a {
@@ -291,7 +291,7 @@ color:#333333;
   padding:20px;
   margin-bottom:20px;
   border-radius:10px;
-  height:85vh;
+  height:100vh;
 }
 
 /* Mensaje de no hay películas */
@@ -347,10 +347,10 @@ color:#333333;
 /* ------ Cards --------*/
 .related{
   width:100%;
-  background-color:#FFC107;
+  background-color:#e9b61d;
   color:#333;
   padding:10px;
-  height:97vh;
+  height:138vh;
 }
 
 .related h1{
@@ -382,7 +382,6 @@ color:#333333;
   margin: 2% auto 2% 5%;
   padding:20px;
   height:auto;
-  box-shadow: 5px 5px rgb(87, 84, 97);
 }
 
 .card a, .card2 a{
