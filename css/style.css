@@ -204,8 +204,8 @@ h2{
 }
 
 h3{
-  font-size:1.7em;
-  font-weight: bolder; 
+  font-size:1.3em;
+  font-weight: normalr; 
   color:white; 
   text-align: center;
   margin:20px;
@@ -260,6 +260,7 @@ article p{
 
 button, input, select, textarea{
 color:#333333;
+width:300px;
 }
 
 .btn-yellow{
@@ -267,11 +268,12 @@ color:#333333;
   color: #333;
   border: 1px solid #efefef;
   padding:10px;
-  font-size:1em;
+  font-size:1.2em;
   font-weight: bolder;
   cursor:pointer;
   border-radius:10px;
   align-items: left;
+  width:350px;
 }
 
 .btn-yellow:hover{
@@ -283,15 +285,14 @@ color:#333333;
 
 /* --- Resultados de la busqueda de animes con la API JIKAN ---*/
 #list-anime{
-  width: 85%;
-  background-color: #303F9F;
+  width: 100%;
+  background-color: grey;
   color:white;
   border:2px solid #efefef;
   margin:auto;
   padding:20px;
   margin-bottom:20px;
-  border-radius:10px;
-  height:100vh;
+  height:110vh;
 }
 
 /* Mensaje de no hay películas */
@@ -313,7 +314,7 @@ color:#333333;
   padding: 20px;
   height: auto;
   flex-direction: column;
-  box-shadow: 5px 5px rgb(87, 84, 97);
+  
 }
 
 .card-result img{

@@ -44,9 +44,8 @@ menu.addEventListener('click', () => {
 // ----- Armo el FOOTER para todas las páginas -----
 var elem = document.getElementById("idfooter");
 elem.innerHTML = `
-  <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-l social_networks">   Twitter</i></a> 
-  <i class="fa-brands fa-linkedin-in fa-l social_networks">   Linkedin</i> 
-  <p>Copyright &copy;2023 - Comisión 23004: Cecilia Urrutia, Fernando Jaleh</p>
+  
+<p><strong>Codo a Codo 4.0 -Primer cuatrimestre 2023 - Cecilia Urrutia, Fernando Jaleh</strong></p>
 `
 
 
