@@ -253,15 +253,19 @@ article p{
 }
 
 .search_items label, input, button {
-  margin-left: 15px;
   padding: 10px;
   border-radius: 5px;
 }
 
-button, input, select, textarea{
+button, input, select{
 color:#333333;
-width:300px;
+width:100%;
 }
+
+#searchTitulo, textarea{
+  color:#333333;
+  width:50%;
+  }
 
 .btn-yellow{
   background-color:#FFC107;
@@ -273,7 +277,7 @@ width:300px;
   cursor:pointer;
   border-radius:10px;
   align-items: left;
-  width:350px;
+  width:45%;
 }
 
 .btn-yellow:hover{
