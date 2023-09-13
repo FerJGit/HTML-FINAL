@@ -144,11 +144,11 @@ nav.active {
 }
 
 .wrap3{
-  background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
+  background-image: url(https://i.ytimg.com/vi/YzuJnyebc40/maxresdefault.jpg);
 }
 
 .wrap4{
-  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkJ0U8X_w0RpzY4koR4kTx8rzReTsSXnacFNyj8JTusjxAHa6oPB4EopjOR6Z23Hg_dtMdsj3KhkuVOx3YoUr2c6UPKqLeNeV8vVwL8XNLreuhwpCiTVQgbVzmbSAsmxI5oLM8DQnxbEJl0xemAD161M0vJB8ldcuZQZqZoi1tzXwZgcPKxyH6t2BobQ/s700/jigokuraku-anime-personajes.jpg);
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/hells-paradise-jigokuraku-1-6496e9159c24f.jpg?resize=980:*);
 }
 
 
@@ -452,7 +452,7 @@ width:100%;
 
 /* ---- Contacto datos --- */
 .InputData{
-  width: 85%;
+  width: 75%;
   margin: 5px auto;
   border-radius: 12px;
   background-color: #303F9F;
